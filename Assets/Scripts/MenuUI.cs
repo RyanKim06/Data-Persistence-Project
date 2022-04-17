@@ -9,23 +9,16 @@ using UnityEditor;
 
 public class MenuUI : MonoBehaviour
 {
-    public GameObject bestText;
+    public GameObject bestScoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-        bestText = GetComponent<GameObject>();
-
         if(MainDP.instance != null)
         {
-            bestText.GetComponent<Text>().text = "BEST SCORE | " + MainDP.instance.ToString();
+            bestScoreText.GetComponent<Text>().text = 
+                $"BEST SCORE | {MainDP.instance.bestPlayerName} | {MainDP.instance.bestScore}";
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void StartGame()
@@ -35,7 +28,7 @@ public class MenuUI : MonoBehaviour
 
     public void QuitGame()
     {
-        MainDP.instance.SaveBest();
+        //MainDP.instance.SaveBest();
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
 #else

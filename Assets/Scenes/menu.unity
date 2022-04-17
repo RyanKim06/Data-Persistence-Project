@@ -365,7 +365,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BEST SCORE :'
+  m_Text: 'BEST SCORE | '
 --- !u!222 &489170842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -456,7 +456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734281303}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1325506065}
+        m_TargetAssemblyTypeName: MenuUI, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &734281303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,8 +550,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15dec60127f9614b95e3d3ad66e4d3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bestScore: {fileID: 0}
-  bestPlayerName: {fileID: 0}
+  bestScore: 0
+  bestPlayerName: 
 --- !u!1 &817954901
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +724,19 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 750694055}
+        m_TargetAssemblyTypeName: MainDP, Assembly-CSharp
+        m_MethodName: NameEntered
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 827682324}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1023,7 +1047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d47c80d355c13845a4086b86ed8285a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bestText: {fileID: 0}
+  bestScoreText: {fileID: 489170839}
 --- !u!1 &1597589835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,7 +1209,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1736617908}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1325506065}
+        m_TargetAssemblyTypeName: MenuUI, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1736617908
 MonoBehaviour:
   m_ObjectHideFlags: 0

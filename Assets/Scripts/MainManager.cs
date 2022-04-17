@@ -71,6 +71,6 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
-        MainDP.instance.SaveBest();
+        MainDP.instance.SaveBest(m_Points);
     }
 }
